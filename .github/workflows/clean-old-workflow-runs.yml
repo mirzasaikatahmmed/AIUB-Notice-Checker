@@ -1,0 +1,18 @@
+name: Cleanup Old Workflow
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0' # Temporary setup to cleanup!
+# Default runs weekly at 00:00, only on Sunday. [0 0 * * 0]
+
+jobs:
+  del_runs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 7
+          keep_minimum_runs: 1500
