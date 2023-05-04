@@ -5,8 +5,9 @@ import os
 import sys
 
 # Telegram information
-TELEGRAM_CHAT_ID = os.environ["994938597"]
-TELEGRAM_BOT_API_KEY = os.environ["5680934749:AAFwuWu5sO0AfWZc49haGDdhQ8AX-amz_Hs"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+
+TELEGRAM_BOT_API_KEY = os.environ["TELEGRAM_BOT_API_KEY"]
 
 # URL and XPath information for AIUB Notice page
 WEBSITE_URL = "https://aiub.cf/category/notices/"
