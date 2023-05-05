@@ -6,7 +6,6 @@ import sys
 
 # Telegram information
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
-
 TELEGRAM_BOT_API_KEY = os.environ["TELEGRAM_BOT_API_KEY"]
 
 # URL and XPath information for AIUB Notice page
@@ -40,7 +39,7 @@ DB_NAME = "aiub_notices.db"
 DB_TABLE_NAME = "notices"
 
 # Script version
-SCRIPT_VERSION = "2.6"
+SCRIPT_VERSION = "2.3"
 SCRIPT_URL = "https://raw.githubusercontent.com/mirzasaikatahmmed/aiub-notice-checker/main/main.py"
 
 # Check for script updates
